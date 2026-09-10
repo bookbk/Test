@@ -482,8 +482,8 @@
         <div class="config-row">
           <div class="config-label">🎯 จำนวนข้อต่อรอบ</div>
           <div class="limit-selector">
-            <button class="limit-btn" onclick="setLimit(10, this)">10 ข้อ</button>
-            <button class="limit-btn" onclick="setLimit(20, this)">20 ข้อ</button>
+            <button class="limit-btn" onclick="setLimit(30, this)">30 ข้อ</button>
+            <button class="limit-btn" onclick="setLimit(60, this)">60 ข้อ</button>
             <button class="limit-btn active" onclick="setLimit('all', this)">ทั้งหมด</button>
           </div>
         </div>
@@ -594,7 +594,7 @@
     let currentCategoryName = "";
     let selectedCategory = ""; 
     let hasAnswered = false; 
-    let maxQuestionsLimit = all; 
+    let maxQuestionsLimit = 'all'; 
     
     let totalScore = 0;
     let answeredQuestions = {}; 
