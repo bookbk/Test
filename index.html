@@ -832,10 +832,7 @@
       }
       
       if (isShuffleMode) {
-        baseData = baseData.map(q => {
-          let shuffledOptions = [...q.options].sort(() => Math.random() - 0.5);
-          return { ...q, options: shuffledOptions };
-        }).sort(() => Math.random() - 0.5);
+        baseData = baseData.sort(() => Math.random() - 0.5);
       }
 
       if (maxQuestionsLimit !== 'all' && baseData.length > maxQuestionsLimit) {
